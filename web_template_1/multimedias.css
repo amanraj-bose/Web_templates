@@ -1,0 +1,257 @@
+:root{
+  --primary-color: #047aed;
+  --secondary-color: #1c3fa8;
+  --dark-color: #002240;
+  --light-color: #f4f4f4;
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+/* Tablets and under*/
+@media (max-width: 768px) {
+    *{
+      position:relative;
+    }
+    .grid .showcase .grid, .stats .grid, .cli .grid, .cloud .grid .docs-main .grid {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+    }
+    .showcase{
+      height: auto;
+    }
+    .showcase-text{
+      text-align: center;
+      margin-top: 40px;
+    }
+    .showcase-form{
+      justify-self: center;
+      margin: auto;
+    }
+    .cli .grid > *:first-child{
+      grid-column: 1;
+      grid-row: 1;
+    }
+    .docs-head{
+      text-align: center;
+    }
+    .docs-head img{
+      justify-self: center;
+    }
+  }
+  /* Mobile Phone */
+  @media (max-width: 500px) {
+    *{
+      position:relative;
+    }
+    .showcase-form {
+      position: relative;
+      top: 433px;
+      /* top: 395px; */
+      right: 171px;
+      height: 315px;
+      width: 400px;
+      padding: 40px;
+      z-index: 100;
+  }
+    .navbar {
+      /* height: auto;
+      width: auto; */
+      height: 110px;
+    }
+    .navbar .flex{
+      flex-direction: column;
+      /* flex-direction: row;
+      padding: auto; */
+    }
+    .navbar ul{
+      /* padding: auto;
+      background-color: rgba(0,0,0,0.1); */
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      overflow: auto;
+      padding: 40px;
+    }
+    .showcase-form {
+      width: 300px;
+    }
+    .grid {
+      display:grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+  }
+  .navbar {
+      background-color: var(--primary-color);
+      color: #fff;
+      height: 170px;
+  }
+  .navbar ul {
+  display: flex;
+  position: absolute;
+  right: -163px;
+  top: -19px;
+  }
+  .p-3 {
+    margin: -5rem;
+  }
+  .features-head .logo img{
+  width: 108%;
+} 
+
+.download .downloaded .linux_card{
+
+    cursor:pointer;
+}
+.download .downloaded .grep{
+    margin: 25px;
+    padding-left: 0px;
+    flex-wrap: wrap;
+}
+.download .downloaded .linux_card h4{
+    text-align: center;
+    margin: 18px 10px 40px;
+    color: orange;
+}
+.linux_card {
+  background-color: #002240;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+  height: 439px;
+}
+.download .downloaded .linux_card a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: var(--primary-color);
+  color: orange;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  border: 1px orange solid;
+}
+.download .downloaded .linux_card .space {
+  right: 2px;
+}
+.download .downloaded .linux_card a:hover{
+  background-color: #fea44c;
+  color: #fff!important;
+  white-space: nowrap;
+  transition: box-shadow .4s,transform .2s,background .4s,color .4s;
+  text-shadow: 0 2px 5px #fea44c;
+  transform: translateY(5px);
+}
+/* Download windows */
+.download .windows .windows_card{
+  cursor:pointer;
+}
+.download .windows .grep{
+  margin-top: -10px;
+  /* margin: 25px; */
+  padding-left: 25px;
+  /* padding-left: 100px; */
+  flex-wrap: wrap;
+}
+.download .windows .windows_card img{
+width: 100%;
+}
+.download .windows .windows_card h4{
+  text-align: center;
+  margin: 18px 10px 40px;
+  color: orange;
+}
+.windows_card {
+background-color: #002240;
+color: #333;
+border-radius: 10px;
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+padding: 20px;
+margin: 10px;
+width: 300px;
+height: 439px;
+}
+.download .windows .windows_card a{
+text-decoration: none;
+display: inline-block;
+padding: 10px 30px;
+cursor: pointer;
+background: var(--primary-color);
+color: orange;
+border: none;
+border-radius: 5px;
+background-color: transparent;
+border: 1px orange solid;
+}
+.download .windows .windows_card .space {
+right: 2px;
+}
+.download .windows .windows_card a:hover{
+background-color: #fea44c;
+color: #fff!important;
+white-space: nowrap;
+transition: box-shadow .4s,transform .2s,background .4s,color .4s;
+text-shadow: 0 2px 5px #fea44c;
+transform: translateY(5px);
+}
+/* Download Apple */
+.download .apple .apple_card{
+  cursor:pointer;
+}
+.download .apple .grep{
+  margin-top: 5px;
+  /* margin: 25px; */
+  padding-left: 25px;
+  /* padding-left: 100px; */
+  flex-wrap: wrap;
+}
+.download .apple .apple_card img{
+width: 100%;
+}
+.download .apple .apple_card h4{
+  text-align: center;
+  margin: 18px 10px 40px;
+  color: orange;
+}
+.apple_card {
+background-color: #002240;
+color: #333;
+border-radius: 10px;
+box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+padding: 20px;
+margin: 10px;
+width: 300px;
+height: 439px;
+}
+.download .apple .apple_card a{
+text-decoration: none;
+display: inline-block;
+padding: 10px 30px;
+cursor: pointer;
+background: var(--primary-color);
+color: orange;
+border: none;
+border-radius: 5px;
+background-color: transparent;
+border: 1px orange solid;
+}
+.download .apple .apple_card .space {
+right: 2px;
+}
+.download .apple .apple_card a:hover{
+background-color: #fea44c;
+color: #fff!important;
+white-space: nowrap;
+transition: box-shadow .4s,transform .2s,background .4s,color .4s;
+text-shadow: 0 2px 5px #fea44c;
+transform: translateY(5px);
+}
+  }

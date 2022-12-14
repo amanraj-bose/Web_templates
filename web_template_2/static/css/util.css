@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Roboto:ital,wght@0,100;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One:ital@0;1&family=Libre+Franklin:ital,wght@1,100&family=Oleo+Script+Swash+Caps&family=Roboto:ital,wght@0,100;1,900&display=swap');
+
+:root{
+  --primary-color: orange;
+  --header-font: 'Oleo Script Swash Caps', cursive;
+  --text-writing: 'Roboto', sans-serif;
+  --secondary-color: red;
+  --secondary-header: 'Libre Franklin', sans-serif;
+}
+
+/* Header Section Started */
+/* Navbar */
+
+/* 
+  nav .mainMenu .closeMenu,
+  .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+*/
+
+.container .flex .hamburger{
+  display: none;
+}
+
+.container {
+  box-sizing: border-box;
+}
+.container .fixed h1 {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.container .flex ul li {
+  display: inline-block;
+}
+.container .flex ul li a {
+  text-decoration: none;
+  font-family: "Oleo Script Swash Caps", cursive;
+  display: block;
+  padding: 8px;
+  background-color: #000;
+  border-radius: 6px;
+  color: orange;
+  position: relative;
+}
+.container .flex ul li a:hover {
+  border-radius: 6px;
+  background-color: orange;
+  color: #fff;
+}
+
+/* Logo and Main Header Name */
+.name {
+  display: flex;
+
+}
+.name .logo{
+  cursor: pointer;
+}
+
+.name .names {
+  overflow: hidden;
+  position: relative;
+  margin-inline-start: 10px;
+  inline-size: 125px;
+  text-shadow: 0 0 5px #fff, 0 0 5px #fff, 0 0 60px #fff;
+}
+
+/* Director and Principle [ Name of (Head Teachers) ]*/
+
+.head-names{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+.head-names .director{
+  align-items: flex-end;
+  text-align: center;
+  width: 500px;
+  height: 265px;
+  overflow: hidden;
+  box-shadow : 0 0 30px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease-in;
+  margin: 5px;
+}
+.head-names .director .director_image{
+  padding: 10px;
+  height: 50%;
+  width: 25%;
+  border-radius: 500px;
+}
+.head-names .director .head-info{
+  font-family: var(--header-font);
+  color: var(--primary-color);
+}
+.head-names .director:hover{
+  background-color: orange;
+  transition: .4s ease-in-out;
+  box-shadow: 10px 5px 5px orangered;
+  cursor: pointer;
+  transform: translateY(-10px);
+  color: #fff;
+}
+.head-names .director:hover .head-info{
+  color: #fff;
+}
+.head-names .director:hover .head-info::selection{
+  color: #fff;
+  background-color: skyblue;
+}
+.head-names .director .direct-information{
+  font-weight: 30;
+  font-family: var(--text-writing);
+  font-style: italic;
+  font-size: large;
+}
+.head-names .director:hover .direct-information::selection{
+  color: #fff;
+  background-color: skyblue;
+}
+
+/* Header Section End */
+
+/* main Contents Entering sheets */
+
+/* Content mean small trial page for school information */
+.contents{
+  justify-content: center;
+  padding: 20px;
+  display: flex;
+}
+.contents .cards{
+  padding: 5px;
+  justify-content: center;
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  width: 5000px;
+  text-align: center;
+  overflow: hidden;
+  align-items: flex-start;
+  height: 500px;
+}
+.contents .cards .brief-about h1{
+  font-family: var(--header-font);
+  color: grey;
+  border-bottom: 2px solid blue;
+}
+.contents .cards .brief-about .text{
+  justify-content: left;
+  padding: 15px;
+}
+.contents .cards .brief-about .text .heading{
+  padding: 10px;
+  text-align: left;
+  font-weight: 30;
+  font-size: 30px;
+  font-family: var(--secondary-header);
+  color: #000;
+}
+.contents .cards .brief-about .text .textess{
+  text-align: left;
+}
+.contents .cards .brief-about .text .textess .textes{
+  padding: 11px;
+  font-weight: lighter;
+  font-family: var(--header-font);
+  font-size: 25px;
+  color: grey;
+}
+.contents .cards .brief-about .text .textess .textes .btn{
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: #fff;
+  color: var(--primary-color);
+  border: none;
+  border-radius: 30px;
+  transform: translateY(-2px);
+}
+.contents .cards .brief-about .text .textess .textes a{
+  color: #fea44c;
+  box-shadow: inset 0 0 0 0.15em #fea44c, 0 0px 5px #FF5733;
+  text-shadow: 0 2px 5px #563719;
+  border-radius: 30px;
+  transform-style: preserve-3d;
+  transform-box: 13px;
+  transition: transform 0.2s ease-in;
+}
+.contents .cards .brief-about .text .textess .textes .btn:hover{
+  background-color: orange;
+  color: #fff;
+  transition: 0.50s;
+  box-shadow: 0 0 20px red;
+  transform: translateY(2px);
+}
+
+/* Sub image for School Website */
+
+.subtile-subimage{
+  /* justify-content: right; */
+  display: flex;
+  /* align-items: flex-end; */
+  margin: 10px;
+  justify-content: center;
+  font-family: var(--header-font);
+  font-size: 20px;
+  overflow: hidden;
+}
+.subtile-subimage .texting{
+  align-items: center;
+}
+.subtile-subimage .texting .arrow{
+  padding: 15px;
+  background:white;
+  border-radius: 10px;
+  width:250px;
+  margin: 20px;
+  text-align: center;
+  height: 45px;
+  position: relative;
+  display: inline-block;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.subtile-subimage .texting .change-back{
+  background-color: orangered;
+  color: #fff;
+}
+
+.subtile-subimage .image{
+  justify-content: right;
+  text-align: right;
+  float: right;
+}
+.subtile-subimage .image .school{
+  height: 200px;
+  overflow: hidden;
+  box-shadow : 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  border: 5px solid #fff;
+}
+.shedule{
+  padding: 5%;
+  font-weight: 300;
+  font-size: 30px;
+  color: gray;
+}
+.shedule .news-section-heading{
+  text-align: center;
+  align-items: center;
+  /* line-height: 0%; */
+}
+.shedule .heading-line{
+  width: 25%;
+  border: 2px solid orange;
+  margin: auto;
+}
+
+/* Global Used This Card for Image Carding */
+.image-card{
+  display: flex;
+}
+.image-card .school-show{
+  width: 100%;
+  height: 400px;
+  width: 40%;
+  margin: auto;
+  align-items: flex-start;
+  overflow: hidden;
+  box-shadow : 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  border: 5px solid #fff;
+  height: 100%;
+}
+.image-card .events{
+  margin: auto;
+  align-items: flex-end;
+  overflow: hidden;
+  box-shadow : 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  width: 40%;
+  height: 400px;
+}
+.image-card .events .heading{
+  text-align: center;
+  font-size: 30px;
+  font-family: var(--header-font);
+  color: gray;
+}
+.image-card .sheduleing {
+  margin: auto;
+  align-items: flex-end;
+  overflow: hidden;
+  box-shadow : 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  width: 40%;
+  height: 400px;
+}
+.image-card .sheduleing .heading{
+  text-align: center;
+  font-size: 30px;
+  font-family: var(--header-font);
+  color: gray;
+}
+
+.image-card .sheduleing .shedule-line{
+  width: 25%;
+  margin: auto;
+  border: 1px solid orange;
+}
+.image-card .events .event-line{
+  width: 25%;
+  margin: auto;
+  border: 1px solid orange;
+}
+.event1{
+  padding: 2%;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  height: 15%;
+  width: 60%;
+  margin: auto;
+  border-radius: 45px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+/* gallery Trial cards */
+
+.gallery{
+  padding: 0%;
+  display: block;
+  overflow: hidden;
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); */
+  border-radius: 25px;
+  box-sizing: border-box;
+  height: 50%;
+  width: 98%;
+  margin: 15px;
+  /* margin: 10px;
+  margin-right: 15px;
+*/
+}
+
+
+.gallery-trial-heading{
+  padding: 5%;
+  font-weight: 300;
+  font-size: 30px;
+  color: gray;
+}
+.gallery-trial-heading .gallery-section-heading{
+  text-align: center;
+  align-items: center;
+}
+.gallery-trial-heading .gallery-heading-line{
+  width: 10%;
+  border: 2px solid orange;
+  margin: auto;
+  border-radius: 5px;
+}
+.image-trial-card{
+  text-align: left;
+  justify-content: left;
+}
+.image-trial-card .images{
+  margin: 15px;
+  align-items: flex-end;
+  overflow: hidden;
+  box-shadow : 0 0 5px rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+  width: 30%;
+  height: 300px;
+  transition: 0.2s ease-in;
+  transform: translateY(5px);
+  cursor: pointer;
+}
+.image-trial-card .images:hover{
+  transition: 0.2s ease-in;
+  transform: translateY(-5px);
+  transform: scale(1.05);
+}
+.see-image-btn{
+  padding: 10px;
+  text-align: center;
+}
+.see-image-btn .btn{
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 30px;
+  cursor: pointer;
+  background: #fff;
+  color: var(--primary-color);
+  border: none;
+  border-radius: 30px;
+  transform: translateY(-2px);
+}
+.see-image-btn a{
+  color: #fea44c;
+  box-shadow: inset 0 0 0 0.15em #fea44c, 0 0px 5px #FF5733;
+  text-shadow: 0 2px 5px #563719;
+  border-radius: 30px;
+  transform-style: preserve-3d;
+  transform-box: 13px;
+  transition: transform 0.2s ease-in;
+}
+.see-image-btn .btn:hover{
+  background-color: orange;
+  color: #fff;
+  transition: 0.50s;
+  box-shadow: 0 0 20px red;
+  transform: translateY(2px);
+}
+
+.line{
+  color: #fff;
+  display: flex;
+  background-color: #fea44c;
+  text-align: center;
+  align-items: center;
+}
+
+.line .for-addmission-form-applying{
+  text-align: center;
+  padding: 20px;
+  background-color: #ffa500;
+}
+.line a{
+  border: 2px solid #fff;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+  text-transform: uppercase;
+  /* font-size: 25px; */
+  font-family: var(--secondary-header);
+  border-radius: 5px;
+  transition: 0.2s ease-in;
+}
+.line a:hover{
+  background: #fff;
+  border: 2px solid orange;
+  color: orange;
+  text-transform: uppercase;
+  font-family: var(--header-font);
+  transition: 0.2s ease-out;
+}

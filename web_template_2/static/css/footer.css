@@ -1,0 +1,115 @@
+.container-box {
+    max-width: 1170px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+.rows {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-box .rows .columuns {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.container-box .rows .columuns h4 {
+    /* border-bottom: 2px solid orange; */
+    font-size: 22px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-weight: 500;
+    position: relative;
+    color: orange;
+}
+
+.container-box .rows .columuns::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10%;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.container-box .rows .columuns ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.container-box .rows .columuns ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.2s ease-in;
+}
+
+.container-box .rows .columuns ul li a:hover {
+    color: #fff;
+    padding-left: 10px;
+}
+
+.container-box .rows .columuns .bottom-name {
+    font-size: 30px;
+    text-align: left;
+    /* margin-right: 20px; */
+    margin: 5%;
+}
+.container-box .rows .columuns .facebook{
+    border-radius: 20px;
+    height: 20%;
+    width: 20%;
+}
+.container-box .rows .columuns .social .instagram{
+    height: 20%;
+    width: 30%;
+}
+.container-box .rows .columuns .social .facebook:hover{
+    margin-inline-end: 0%;
+    background-color: gray;
+}
+@media (max-width: 768px) {
+    .container-box .rows .columuns h4{
+        font-size: 15px;
+    }   
+    .container-box .rows .columuns .bottom-name{
+        font-size: 18px;
+    }
+    .container-box .rows .columuns ul li a{
+        font-size: 12px;
+    }
+    .container-box .rows .columuns ul li i {
+        font-size: 8px;
+    }
+    .container-box .rows .columuns ul .symbol-small{
+        font-size: 15px;
+    }
+    .container-box .rows .columuns .social a{
+        display: block;
+        text-align: center;
+        justify-content: space-between;
+        padding: 3px;
+    }
+    .container-box .rows .columuns .facebook{
+        height: 40%;
+        width: 40%;
+    }
+    .container-box .rows .columuns .social .instagram{
+        height: 60%;
+        width: 60%;
+    }
+}
+/* .about-us h4{
+    border-bottom: 5px solid #fff;
+    font-weight: 90px;
+    font-size: 25px;
+    text-transform: uppercase;
+} */

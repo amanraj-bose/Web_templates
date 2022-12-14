@@ -1,0 +1,69 @@
+/* Universal Functions */
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/* Element Functions */
+/* footer{
+    background-color: #0072be;
+    padding: 20px;
+    text-align: center;
+} */
+header {
+    display: flex;
+    align-items: flex-start;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+    padding: 30px 10%;
+}
+
+footer {
+    background: #24262b;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: end;
+    justify-items: center;
+    padding-top: 3%;
+    padding-bottom: 2%;
+}
+
+/* global functions */
+
+/* Copy Paste object */
+::selection {
+    background: orange;
+    color: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    display: block;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: black;
+
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: lightgray;
+    box-shadow: 0 0 0 0.15em rgba(0, 0, 0, 30%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #717171;
+}
+
+/* Media-query Universal for extra padding website and scroll bar setup */
+@media (max-width: 768px) {
+    footer{
+        padding-bottom: 5%;
+    }
+}
